@@ -12,7 +12,7 @@ export const Logo = ({}) => {
           </div>
         </div>
         <span className="logo-text">
-          Gravi<span>.ng</span>
+          <span>Gravi</span>.ng
         </span>
       </Link>
     </div>

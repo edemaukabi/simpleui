@@ -193,3 +193,31 @@ body {
   text-decoration: none;
   color: #797979
 }
+
+.footer-btn {
+  color: #fff;
+  background-color: #FF7008;
+  border: 1px solid #797979;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.footer-submit > input {
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border: 1px solid #797979;
+  background-color: #EAEAEA;
+}
+
+.footer-socials {
+  border-bottom: 1px solid #797979;
+  padding-bottom: 2rem;
+  margin: 1rem 3rem;
+  padding-left: 2rem;
+}
+
+.gravii {
+  color: #FF7008;
+}

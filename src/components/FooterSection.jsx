@@ -1,6 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Logo } from "./Logo";
+import facebookicon from "../assets/images/facebook.png"
+import instagramlogo from "../assets/images/instagram-logo.png"
+import twitterlogo from "../assets/images/twitter.png"
+
 
 export const FooterSection = () => {
   return (
@@ -58,9 +62,9 @@ export const FooterSection = () => {
               </li>
               
               <li>
-                <div>
+                <div className="footer-submit">
                     <input type="text" placeholder="Your Email" />
-                    <button>Submit</button>
+                    <button className="footer-btn">Submit</button>
                 </div>
               </li>
     
@@ -68,6 +72,15 @@ export const FooterSection = () => {
           </div>
         </div>
 
+      </div>
+      <div className="footer-socials">
+        <img src={instagramlogo} alt="" />
+        <img src={facebookicon} alt="" />
+        <img src={twitterlogo} alt="" />
+      </div>
+
+      <div className="copyright">
+        <p>Copyright 2018. <span className="gravii">Gravii</span>.ng. All rights reserved</p>
       </div>
     </footer>
   );
