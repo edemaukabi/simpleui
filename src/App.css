@@ -1,3 +1,7 @@
+body {
+  background-color: #F8F8F8;
+}
+
 .ui-app {
   display: flex;
   flex-direction: column;
@@ -68,6 +72,10 @@
   display: inline-block;
 }
 
+.logo-text > span {
+  color: #FF7008;
+}
+
 .active {
   border-bottom: #FF7008 2px solid;
 }
@@ -92,7 +100,6 @@
 }
 
 .hero-btn {
-  /* border: 1px solid #FF7008; */
   color: #FF7008;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
@@ -102,7 +109,7 @@
 
 .partners-section {
   padding: 1rem 3rem;
-  background-color: #F8F8F8;
+  background-color: #EAEAEA;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -123,6 +130,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .features-title {
@@ -147,4 +155,41 @@
   align-items: center;
   margin: 1rem 0;
   text-align: center;
+}
+
+.footer-section {
+  background-color: #EAEAEA;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 3rem;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.footer-section > h3 {
+  font-weight: 700;
+}
+
+.footer-section li {
+  list-style: none;
+  margin: 0;
+  margin: 1rem 0;
+}
+
+.footer-section ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #797979
 }

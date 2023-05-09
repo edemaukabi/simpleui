@@ -1,36 +1,74 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Logo } from "./Logo";
 
-export const Features = ({features}) => {
-    return (
-        <footer className="footer-section">
-            {/* <div className="features-title">
-                <p> Features </p>
-                <h2> Designed with everyone in mind </h2>
-            </div> */}
-            <div className="footer-container">
-                    <div className="footer-section">
-                        <div className="footer-section-title">
-                            <h3>Get Started</h3>
-                            <ul>
-                                <li>
-                                    <Link>Documentation</Link>
-                                </li>
-                                <li>
-                                    <Link>Pricing</Link>
-                                </li>
-                                <li>
-                                    <Link>Tutorials</Link>
-                                </li>
-                                <li>
-                                    <Link>Guide</Link>
-                                </li>
+export const FooterSection = () => {
+  return (
+    <footer className="footer-section">
+      <div className="footer-container">
 
-                            </ul>
-                            <Link className="hero-btn">Learn more</Link>
-                        </div>
-                    </div>
-            </div>
-        </footer>
-    );
-                }
+        <div className="footer-section">
+          <Logo />
+        </div>
+
+        <div className="footer-section">
+          <div className="footer-section-title">
+            <h3>Get Started</h3>
+            <ul>
+              <li>
+                <Link>Documentation</Link>
+              </li>
+              <li>
+                <Link>Pricing</Link>
+              </li>
+              <li>
+                <Link>Tutorials</Link>
+              </li>
+              <li>
+                <Link>Guide</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="footer-section">
+          <div className="footer-section-title">
+            <h3>Platforms</h3>
+            <ul>
+              <li>
+                <Link>Available on iOS</Link>
+              </li>
+              <li>
+                <Link>Available on Android</Link>
+              </li>
+              <li>
+                <Link>Available on the Web</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="footer-section">
+          <div className="footer-section-title">
+            <h3>Newsletter</h3>
+            <ul>
+              <li>
+                <p>Get curated content and design inspiration delivered straight to your inbox. Learn more</p>
+                <Link>Learn more</Link>
+              </li>
+              
+              <li>
+                <div>
+                    <input type="text" placeholder="Your Email" />
+                    <button>Submit</button>
+                </div>
+              </li>
+    
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+  );
+};
