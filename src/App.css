@@ -1,38 +1,150 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.ui-app {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
+}
+
+.ui-header-section {
+  padding: 1rem 3rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background: url("./assets/images/herobackgroundimage.png") no-repeat center center fixed;
+  min-height: 60vh;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  margin: 0 1rem;
+  list-style: none;
+  text-decoration: none;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+}
+
+.reactangle {
+  position: relative;
+  display: flex;
+}
+
+.inner-reactangle {
+  background-color: #FF70084D;
+  border: none;
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+}
+
+.outer-reactangle {
+  border: 1px solid #FF7008;
+  background-color: #fff;
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+.logo-container {
+  display: flex;
+  text-decoration: none;
+}
+
+.logo-text {
+  margin-left: 1.5rem;
+  display: inline-block;
+}
+
+.active {
+  border-bottom: #FF7008 2px solid;
+}
+
+.hero-section {
+  position: absolute;
+  max-width: 30rem;
+  bottom: 5rem;
+  right: 5rem;
+}
+
+.hero-text h1 {
+  font-weight: 700;
+}
+
+.hero-text p {
+  line-height: 1.5rem;
+ }
+
+.hero-text span{
+  color: #FF7008;
+}
+
+.hero-btn {
+  /* border: 1px solid #FF7008; */
+  color: #FF7008;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.partners-section {
+  padding: 1rem 3rem;
+  background-color: #F8F8F8;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.partners-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.partner {
+  margin: 0 1rem;
+  width: fit-content
+}
+
+.features-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.features-title {
+  margin: 1rem 0;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.features-title > p {
+  color: #FF7008;
+  font-weight: 700;
+}
+
+.features-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+  text-align: center;
 }
