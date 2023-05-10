@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import './App.css';
 import { Header } from './components/Header';
 import { HeroSection } from './components/HeroSection';
@@ -6,11 +7,16 @@ import { Features } from './components/Features';
 import { FooterSection } from './components/FooterSection';
 import { partnerCompanies, featuresData } from './assets/data';
 
+
+
+
 function App() {
+  const [headerBackground, setHeaderBackground] = useState("ui-header-section")
+
   return (
     <div className="ui-app">
-      <div className="ui-header-section">
-      <Header />
+      <div className={headerBackground}>
+      <Header addback={setHeaderBackground}/>
       </div>
       <HeroSection />
       <Partners partners={partnerCompanies}/>

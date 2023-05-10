@@ -3,7 +3,7 @@ import { NavLink, Switch, Route, BrowserRouter as Router } from "react-router-do
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { Logo } from "./Logo";
 
-export const Header = ({}) => {
+export const Header = ({addback}) => {
     const [openSidemenu, setOpenSidemenu] = useState(false)
     const [activeClass, setActiveClass] = useState(false)
     
@@ -14,9 +14,16 @@ export const Header = ({}) => {
         e.target.classList.add('vertical-active-link');
     }
     const handleOpenClose = () => {
-        if (openSidemenu) setOpenSidemenu(false)
-        else setOpenSidemenu(true)
+        if (openSidemenu) {
+            setOpenSidemenu(false)
+            addback("ui-header-section")
+        }
+        else {
+            setOpenSidemenu(true)
+            addback("backgroundImageAdd")
+        }
     }
+    const addBackgroundImage = openSidemenu ? "backgroundImageAdd" : "ui-header-section"
   return (
     <header>
       <nav className="header-nav">
