@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import headphone from "../assets/images/headphones.png"
 
 export const HeroSection = ({}) => {
   return (
     <section className="hero-section">
       <div className="hero-container">
+        <img src={headphone} alt="" className="hero-icon"></img>
         <div className="hero-text">
           <h1>
             Guaranteed to give you the best experience in
