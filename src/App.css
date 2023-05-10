@@ -1,5 +1,11 @@
+#root {
+  background-color:
+}
 body {
   background-color: #F8F8F8;
+  box-sizing: border-box;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .ui-app {
@@ -16,6 +22,11 @@ body {
   position: relative;
   background: url("./assets/images/herobackgroundimage.png") no-repeat center center fixed;
   min-height: 60vh;
+}
+
+header {
+  position: fixed;
+  width: 90%
 }
 
 .header-nav {
@@ -113,18 +124,33 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  @media screen and (max-width: 375px) {
+    flex-direction: column;
+  }
 }
 
 .partners-container {
   display: flex;
   justify-content: space-between;
-  margin: 1rem 0;
+  @media screen and (max-width: 375px) {
+
+  }
 }
 
 .partner {
-  margin: 0 1rem;
-  width: fit-content
+  margin: 1rem;
+  width: 3rem;
+  flex-wrap: wrap;
+  @media screen and (max-width: 375px) {
+    max-width: 2rem;
+  }
 }
+
+.partner { 
+  margin: 2rem;
+}
+
+
 
 .features-section {
   display: flex;
@@ -147,6 +173,10 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 1rem 0;
+  @media screen and (max-width: 375px) {
+    flex-wrap: wrap;
+
+  }
 }
 
 .feature {
@@ -165,6 +195,11 @@ body {
   display: flex;
   justify-content: space-around;
   padding: 1rem 3rem;
+  flex-wrap: wrap;
+  @media screen and (max-width: 375px) {
+    flex-direction: column;
+
+  }
 }
 
 .footer-section {
@@ -220,4 +255,16 @@ body {
 
 .gravii {
   color: #FF7008;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  @media screen and (max-width: 375px) {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  
 }
