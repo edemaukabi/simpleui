@@ -11,8 +11,8 @@ function App() {
     <div className="ui-app">
       <div className="ui-header-section">
       <Header />
-      <HeroSection />
       </div>
+      <HeroSection />
       <Partners partners={partnerCompanies}/>
       <Features features={featuresData}/>
       <FooterSection />

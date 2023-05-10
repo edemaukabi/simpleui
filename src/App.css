@@ -1,17 +1,16 @@
-#root {
-  background-color:
-}
+
 body {
   background-color: #F8F8F8;
   box-sizing: border-box;
-  padding-right: 1rem;
-  padding-left: 1rem;
 }
 
 .ui-app {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  position: relative;
+  /* padding-right: 1rem;
+  padding-left: 1rem; */
 }
 
 .ui-header-section {
@@ -19,7 +18,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  /* position: relative; */
   background: url("./assets/images/herobackgroundimage.png") no-repeat center center fixed;
   min-height: 60vh;
 }
@@ -38,6 +37,9 @@ header {
   display: flex;
   margin: 0;
   padding: 0;
+  @media screen and (max-width: 480px) {
+    display:none
+  }
 }
 
 .navbar-menu li {
@@ -92,10 +94,19 @@ header {
 }
 
 .hero-section {
-  position: absolute;
   max-width: 30rem;
   bottom: 5rem;
   right: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  @media screen and (min-width: 480px) {
+    max-width: 30rem;
+    right: 0;
+    position: absolute;
+    top: 10rem;
+    right: 5rem;
+  }
 }
 
 .hero-text h1 {
@@ -124,16 +135,18 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  @media screen and (max-width: 375px) {
-    flex-direction: column;
+  flex-wrap: wrap;
+  @media screen and (max-width: 480px) {
+    /* flex-direction: column; */
+
   }
 }
 
 .partners-container {
   display: flex;
   justify-content: space-between;
-  @media screen and (max-width: 375px) {
-
+  flex-wrap: wrap;
+  @media screen and (max-width: 480px) {
   }
 }
 
@@ -141,16 +154,16 @@ header {
   margin: 1rem;
   width: 3rem;
   flex-wrap: wrap;
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 480px) {
     max-width: 2rem;
+    margin-left: 0;
+    width: 2rem;
   }
 }
 
-.partner { 
-  margin: 2rem;
+.partner-image {
+  width: 100%
 }
-
-
 
 .features-section {
   display: flex;
@@ -173,7 +186,7 @@ header {
   display: flex;
   justify-content: space-between;
   margin: 1rem 0;
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 480px) {
     flex-wrap: wrap;
 
   }
@@ -196,7 +209,7 @@ header {
   justify-content: space-around;
   padding: 1rem 3rem;
   flex-wrap: wrap;
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 480px) {
     flex-direction: column;
 
   }
@@ -260,11 +273,12 @@ header {
 .hamburger {
   background: none;
   border: none;
-  @media screen and (max-width: 375px) {
-    display: block;
+  padding: 0 1rem;
+  @media screen and (min-width: 480px) {
+    display: none;
   }
 }
 
-@media screen and (min-width: 375px) {
-  
+.copyright {
+  margin-left: 3rem;
 }

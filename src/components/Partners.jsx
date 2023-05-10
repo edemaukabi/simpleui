@@ -9,7 +9,7 @@ export const Partners = ({partners}) => {
                     const {id, logo, name} = partner;
                     return (
                         <div key={id} className="partner">
-                            <img src={logo} alt={name} />
+                            <img src={logo} alt={name} className="partner-image"/>
                         </div>
                     );
                 }
